@@ -1,25 +1,25 @@
 class Keylock < Formula
   desc "Run a command behind an input lock so stray keys can't interrupt it"
   homepage "https://github.com/bayoudhi/keylock"
-  version "0.1.2"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bayoudhi/keylock/releases/download/v0.1.2/keylock-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "6381a1fd5822bb3a56463b1bcfa7be55bc545892abda36f4ba814868cc78791d"
+      url "https://github.com/bayoudhi/keylock/releases/download/v0.2.0/keylock-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "1766c7354f70d7d37806e52aa7f0b3dec942356595fb08759dd199fc3a4140df"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bayoudhi/keylock/releases/download/v0.1.2/keylock-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "0d24850f942478cbf6976bf2a60263914bf7bd46c56a4a410d95b0fe04231ce5"
+      url "https://github.com/bayoudhi/keylock/releases/download/v0.2.0/keylock-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "127962db72345b4ede3b16a321226ed9b0d9eb982b778e7a337df95ea45df734"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bayoudhi/keylock/releases/download/v0.1.2/keylock-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "f1f176d889279a7b7927956dfc6a6b80939a94f3bd0f3ae113aff50afdf17f33"
+      url "https://github.com/bayoudhi/keylock/releases/download/v0.2.0/keylock-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "5128d46ed741de73bb784a1cb1d9487c6650bd11e072627800db08ddc4c0e572"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bayoudhi/keylock/releases/download/v0.1.2/keylock-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "976fe2ecd9a4c814a9a12cdf33067949de5d2ceb012f7c8d8fc4ae11e8f19547"
+      url "https://github.com/bayoudhi/keylock/releases/download/v0.2.0/keylock-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "16fe665dd978a1456a883a0226501e872387301d8882cae0a4c2c385b7c370d5"
     end
   end
   license "MIT"
