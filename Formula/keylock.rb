@@ -1,7 +1,6 @@
 class Keylock < Formula
   desc "Run a command behind an input lock so stray keys can't interrupt it"
   homepage "https://github.com/bayoudhi/keylock"
-  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/bayoudhi/keylock/releases/download/v0.2.0/keylock-cli-aarch64-apple-darwin.tar.xz"
